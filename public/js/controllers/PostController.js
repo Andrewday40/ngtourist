@@ -14,7 +14,7 @@
     //   location: 'Marks Prime Rib',
     //   description: 'Stuff and things',
     //   person: 'local',
-    //   catagory: 'restaurant'
+    //   category: 'restaurant'
     // };
     // PostService.createPost(postObj)
     //            .then(function(response){
