@@ -12,12 +12,12 @@
     function getAllPosts(){
       PostService.getAllPosts()
                  .then(function(){
-                   $scope.post = PostService.post;
+                   $scope.posts = PostService.posts;
                  });
     }
 
-    function createPost(post){
-      PostService.createPost(post)
+    function createPost(posts){
+      PostService.createPost(posts)
                  .then(function(response){
                    getAllPosts();
                  });

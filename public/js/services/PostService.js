@@ -11,7 +11,8 @@
       getAllPosts: getAllPosts,
       createPost: createPost,
       updatePost: updatePost,
-      deletePost: deletePost
+      deletePost: deletePost,
+      searchForCity: searchForCity
     };
     function createPost(postObj){
       return $http.post(baseUrl, postObj);
@@ -24,6 +25,9 @@
     }
     function deletePost(postId){
       return $http.delete(baseurl+postId);
+    }
+    function searchForCity(searchCity, searchState){
+      return $http.get(baseUrl + 'city/?city='+searchCity+'&state='+searchState);
     }
     return service;
   }

@@ -14,6 +14,9 @@
       templateUrl: 'html/views/post.html',
       controller: 'PostController'
     })
+    .when('/city', {
+      templateUrl: 'html/views/city.html'
+    })
     .otherwise({
       redirectTo: '/'
     });
