@@ -1,5 +1,5 @@
 
-  <div class="row" style="margin-top: 200px;">
+  <div class="row" style="margin-top: 150px;">
     <div class="col-md-8 col-md-offset-2 well">
       <div>
         <h1>Select a City:</h1>
@@ -10,13 +10,16 @@
         <input type="text" ng-model='searchState'>
       </div>
       <div>
+        <a href="#/posts" class='btn-success btn-lg pull-left'>Post</a>
+      </div>
+      <div>
         <!-- <a href='#/city' class='btn-primary btn-lg pull-right' ng-click='search(searchCity, searchState)'>Search</a> -->
         <button class='btn-primary btn-lg pull-right' ng-click='search(searchCity, searchState)'>Search</button>
       </div>
     </div>
   </div>
   <div class="row" ng-repeat='post in postData'>
-    <div class="well">
+    <div class="jumbotron">
       <div class="row text-center">
         <p>City: {{post.city}}</p>
         <p>State: {{post.state}}</p>
