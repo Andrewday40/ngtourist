@@ -1,5 +1,9 @@
 
-  <div class="row" style="margin-top: 150px;">
+  <div class="row" style="margin-top: 100px;">
+    <div class='well'>
+      <p>Welcome to my Tourist App.  With this App, the idea is to provide a point of reference for tourist when visiting a particular city.  Simply put, when you visit a place for whatever reason, I ask that you leave a description of your experience.  What you like or didn't like about it, and whether or not you would visit again.  As well, I would also encourage locals of these towns, and cities to post places they enjoy and perhaps that tourist visiting your fine town or city would enjoy as well.  If you have any questions or suggestion, please send me an email at: Andrewday40@gmail.com.
+</p>
+    </div>
     <div class="col-md-8 col-md-offset-2 well">
       <div>
         <h1>Select a City:</h1>
@@ -9,20 +13,20 @@
         <h1>Select a State:</h1>
         <input type="text" ng-model='searchState'>
       </div>
+      <br>
       <div>
-        <a href="#/posts" class='btn-success btn-lg pull-left'>Post</a>
+        <a href="#/posts" class='btn-warning btn-lg pull-right'>Post</a>
       </div>
       <div>
         <!-- <a href='#/city' class='btn-primary btn-lg pull-right' ng-click='search(searchCity, searchState)'>Search</a> -->
-        <button class='btn-primary btn-lg pull-right' ng-click='search(searchCity, searchState)'>Search</button>
+        <button class='btn-warning btn-lg pull-left' ng-click='search(searchCity, searchState)'>Search</button>
       </div>
     </div>
   </div>
   <div class="row" ng-repeat='post in postData'>
     <div class="jumbotron">
       <div class="row text-center">
-        <p>City: {{post.city}}</p>
-        <p>State: {{post.state}}</p>
+        <p>City: {{post.city}}, {{post.state}}</p>
         <p>Location: {{post.location}}</p>
         <p>Description: {{post.description}}</p>
         <p>Person: {{post.person}}</p>
