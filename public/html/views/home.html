@@ -1,17 +1,70 @@
 
-  <div class="row" style="margin-top: 100px;">
+  <div class="row" style="margin-top: 50px;">
     <div class='well'>
       <p>Welcome to my Tourist App.  With this App, the idea is to provide a point of reference for tourist when visiting a particular city.  Simply put, when you visit a place for whatever reason, I ask that you leave a description of your experience.  What you like or didn't like about it, and whether or not you would visit again.  As well, I would also encourage locals of these towns, and cities to post places they enjoy and perhaps that tourist visiting your fine town or city would enjoy as well.  If you have any questions or suggestion, please send me an email at: Andrewday40@gmail.com.
 </p>
     </div>
-    <div class="col-md-8 col-md-offset-2 well">
+    <div class="col-md-8 col-md-offset-2 well" style='margin-top: 50px;'>
       <div>
         <h1>Select a City:</h1>
-        <input type="text" ng-model='searchCity'>
+        <input type="text" ng-model='searchCity' style='color: black;'>
       </div>
       <div>
         <h1>Select a State:</h1>
-        <input type="text" ng-model='searchState'>
+        <select ng-model='searchState' style="color: black;">
+          <option value='AL'>Alabama
+          <option value='AK'>Alaska
+          <option value='AZ'>Arizona
+          <option value='AR'>Arkansas
+          <option value='CA'>California
+          <option value='CO'>Colorado
+          <option value='CT'>Connecticut
+          <option value='DC'>District of Columbia
+          <option value='DE'>Delaware
+          <option value='FL'>Florida
+          <option value='GA'>Georgia
+          <option value='HI'>Hawaii
+          <option value='ID'>Idaho
+          <option value='IL'>Illinois
+          <option value='IN'>Indiana
+          <option value='IA'>Iowa
+          <option value='KS'>Kansas
+          <option value='KY'>Kentucky
+          <option value='LA'>Louisiana
+          <option value='ME'>Maine
+          <option value='MD'>Maryland
+          <option value='MA'>Massachusetts
+          <option value='MI'>Michigan
+          <option value='MN'>Minnesota
+          <option value='MS'>Mississippi
+          <option value='MO'>Missouri
+          <option value='MT'>Montana
+          <option value='NE'>Nebraska
+          <option value='NV'>Nevada
+          <option value='NH'>New Hampshire
+          <option value='NJ'>New Jersey
+          <option value='NM'>New Mexico
+          <option value='NY'>New York
+          <option value='NC'>North Carolina
+          <option value='ND'>North Dakota
+          <option value='OH'>Ohio
+          <option value='OK'>Oklahoma
+          <option value='OR'>Oregon
+          <option value='PA'>Pennsylvania
+          <option value='PR'>Puerto Rico
+          <option value='RI'>Rhode Island
+          <option value='SC'>South Carolina
+          <option value='SD'>South Dakota
+          <option value='TN'>Tennessee
+          <option value='TX'>Texas
+          <option value='UT'>Utah
+          <option value='VT'>Vermont
+          <option value='VA'>Virginia
+          <option value='WA'>Washington
+          <option value='WV'>West Virginia
+          <option value='WI'>Wisconsin
+          <option value='WY'>Wyoming
+        </select>
       </div>
       <br>
       <div>
@@ -19,11 +72,11 @@
       </div>
       <div>
         <!-- <a href='#/city' class='btn-primary btn-lg pull-right' ng-click='search(searchCity, searchState)'>Search</a> -->
-        <button class='btn-warning btn-lg pull-left' ng-click='search(searchCity, searchState)'>Search</button>
+        <button class='btn-warning btn-lg pull-left' ng-click='search(searchCity, searchState)'>Search</buttun>
       </div>
     </div>
   </div>
-  <div class="row" ng-repeat='post in postData'>
+  <div class="row" ng-repeat='post in postData' style='margin-top: 50px;'>
     <div class="jumbotron">
       <div class="row text-center">
         <p>City: {{post.city}}, {{post.state}}</p>
